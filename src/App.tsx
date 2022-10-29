@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Profile from "./components/Profile";
+
+import slack from "../src/images/slack.png";
+import git from "../src/images/git.png";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="items-center w-full px-10 md:px-40 pb-20">
+
+      <Profile/>
+      <Body />
+      <div className="flex md:hidden py-10 justify-center space-x-5">
+        <img src={slack} alt="badiru" />
+        <img src={git} alt="badiru" />
+      </div>
+      <Footer />
     </div>
   );
 }
