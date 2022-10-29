@@ -2,7 +2,6 @@ import React from "react";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Profile from "./components/Profile";
-
 import slack from "../src/images/slack.png";
 import git from "../src/images/git.png";
 
